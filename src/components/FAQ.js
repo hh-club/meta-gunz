@@ -47,7 +47,7 @@ const FAQ = () => {
                     <div className="faq-container">
                         <FAQItem
                             n="0"
-                            question="What is the Hungover Hedgehogs Club?"
+                            question="What is the MetaGunz NFT?"
                             answer={["The Hungover Hedgehogs Club is a collection of 5,555 unique vector art Hedgehogs who are constantly getting pissed together on the Ethereum Blockchain. Owning a Hungover Hedgehog is your ticket into the our club, giving you access to many holder utilities and benefits."]}
                         />
                         <FAQItem

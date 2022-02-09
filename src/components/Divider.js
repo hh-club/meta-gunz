@@ -5,15 +5,15 @@ const HR = () => {
     return (
         <Container>
             <hr style={{
-                color: 'var(--accent)',
-                backgroundColor: 'var(--accent)',
+                color: 'var(--glow)',
+                backgroundColor: 'var(--glow)',
                 height: 3,
-                borderColor: 'var(--accent)',
+                borderColor: 'var(--glow)',
                 margin: 0,
                 opacity: "0.75",
-                background: "-webkit-linear-gradient(to right, #198754 20%, #C1CF63 100%)",
-                background: "-moz-linear-gradient(to right, #198754 20%, #C1CF63 100%)",
-                background: "linear-gradient(to right, #198754 20%, #C1CF63 100%)",
+                background: "-webkit-linear-gradient(to right, var(--glow) 20%, #C1CF63 100%)",
+                background: "-moz-linear-gradient(to right, var(--glow) 20%, #C1CF63 100%)",
+                background: "linear-gradient(to right, var(--glow) 20%, #C1CF63 100%)",
             }} />
         </Container>
     )

@@ -19,13 +19,13 @@ const Welcome = () => {
             <Container id="About" className="section-container">
                 <Row>
                     <Col xs={12} md={8}>
-                        <Header heading="Welcome to the Hungover Hedgehogs Club"
+                        <Header heading="Welcome to the MetaGunz"
                             content={["The Hungover Hedgehogs Club is a collection of 5,555 NFTs with a unique style of art never before seen in other NFT collections. With over 150 different traits, an insane backstory and our unique style of vector art, our project and community stands out above many others.",
                                 "HHC's $THORN token is also set to launch soon after mint, holders will be able to purchase HHC merchandise as well as purchase whitelist passes for future Hungover projects and more.",
                                 "The discord server launched yesterday and their whitelist has just opened up with 100/755 WL spots already taken in the first 2 hours! DONT MISS OUT ON THIS OPPORTUNITY!!"]}
                         />
                         <Button
-                            href="https://www.discord.gg/Xcscqsh7cD"
+                            href="https://discord.gg/BQApfxqAcW"
                             className="disc-btn"
                         >
                             <img

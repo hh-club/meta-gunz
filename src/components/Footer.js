@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <Container style={{ paddingTop: "8vh" }} align="center">
                 <Header
-                    heading="HHC"
+                    heading="MetaGunz"
                     content={[""]}
                 />
             </Container>
@@ -22,7 +22,7 @@ const Footer = () => {
 
                     <Nav className='m-auto'>
 
-                        <Nav.Link style={{ padding: "0 1vw" }} href="https://www.discord.gg/Xcscqsh7cD" target="_blank" rel="noopener noreferrer">
+                        <Nav.Link style={{ padding: "0 1vw" }} href="https://discord.gg/BQApfxqAcW" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={discord}
                                 width="30"
@@ -31,7 +31,7 @@ const Footer = () => {
                                 alt="Discord Link"
                             />
                         </Nav.Link>
-                        <Nav.Link style={{ padding: "0 1vw" }} href="https://www.instagram.com/hungoverhedgehogclub/" target="_blank" rel="noopener noreferrer">
+                        <Nav.Link style={{ padding: "0 1vw" }} href="https://www.instagram.com/metagunznft/" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={instagram}
                                 width="30"
@@ -40,7 +40,7 @@ const Footer = () => {
                                 alt="Instagram Link"
                             />
                         </Nav.Link>
-                        <Nav.Link style={{ padding: "0 1vw" }} href="https://twitter.com/HHClubNFT" target="_blank" rel="noopener noreferrer">
+                        <Nav.Link style={{ padding: "0 1vw" }} href="https://twitter.com/metagunzNFT" target="_blank" rel="noopener noreferrer">
                             <img
                                 src={twitter}
                                 width="30"

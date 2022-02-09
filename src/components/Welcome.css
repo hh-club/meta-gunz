@@ -18,6 +18,6 @@
     border-radius: 12px;
 }
 .disc-btn:hover {
-    background-color: var(--accent);
-    border-color: var(--accent);
+    background-color: var(--glow);
+    border-color: var(--glow);
 }

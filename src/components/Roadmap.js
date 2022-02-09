@@ -17,12 +17,12 @@ const RoadmapItem = (props) => {
                         </Col>
                         <Col>
                             <ListGroup variant="flush">
-                                {props.item_1 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">1</Badge>{' '}{props.item_1}</ListGroup.Item>}
-                                {props.item_2 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">2</Badge>{' '}{props.item_2}</ListGroup.Item>}
-                                {props.item_3 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">3</Badge>{' '}{props.item_3}</ListGroup.Item>}
-                                {props.item_4 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">4</Badge>{' '}{props.item_4}</ListGroup.Item>}
-                                {props.item_5 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">5</Badge>{' '}{props.item_5}</ListGroup.Item>}
-                                {props.item_6 && <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><Badge bg="success" text="black">6</Badge>{' '}{props.item_6}</ListGroup.Item>}
+                                {props.item_1 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">1</Badge>{' '}{props.item_1}</ListGroup.Item>}
+                                {props.item_2 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">2</Badge>{' '}{props.item_2}</ListGroup.Item>}
+                                {props.item_3 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">3</Badge>{' '}{props.item_3}</ListGroup.Item>}
+                                {props.item_4 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">4</Badge>{' '}{props.item_4}</ListGroup.Item>}
+                                {props.item_5 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">5</Badge>{' '}{props.item_5}</ListGroup.Item>}
+                                {props.item_6 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">6</Badge>{' '}{props.item_6}</ListGroup.Item>}
                             </ListGroup>
                         </Col>
                     </Row>

@@ -10,17 +10,17 @@ const Layers = () => {
         <>
             <Row>
                 <Col xs={4}>
-                    <ListGroup>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">10</Badge>{' '}Backgrounds</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">21</Badge>{' '}Expressions</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">18</Badge>{' '}Eyes</h6></ListGroup.Item>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">10</Badge>{' '}Backgrounds</h6></ListGroup.Item>
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">21</Badge>{' '}Expressions</h6></ListGroup.Item>
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">18</Badge>{' '}Eyes</h6></ListGroup.Item>
                     </ListGroup>
                 </Col>
                 <Col>
-                    <ListGroup>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">33</Badge>{' '}Accessories</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">35</Badge>{' '}Outfits</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">09</Badge>{' '}Ears</h6></ListGroup.Item>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">33</Badge>{' '}Accessories</h6></ListGroup.Item>
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">35</Badge>{' '}Outfits</h6></ListGroup.Item>
+                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">09</Badge>{' '}Ears</h6></ListGroup.Item>
                     </ListGroup>
                 </Col>
             </Row>

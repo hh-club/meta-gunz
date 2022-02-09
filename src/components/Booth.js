@@ -68,7 +68,7 @@ const Booth = () => {
             <HR />
             <Container id="Booth" className="section-container">
                 <Header
-                    heading="The Booth"
+                    heading="The Safehouse"
                     content={['THE BOOTH will be accessible after the public sale has finished to those who hold at least 1 Hungover Hedgehog.',
                         "Through THE BOOTH you will be able to claim a free 1000 $THORN tokens and will gain access to the staking function in which your Hedgehogs will each gain 500 $THORN tokens per day. Along with this you'll gain access to Hagen's exclusive item stock that is not normally buyable from the scrap shop.",
                         "However, THE BOOTH is packed with many other Hedgehogs like you and there are very limited exclusive items, after all Hagen is pretty broke."]}

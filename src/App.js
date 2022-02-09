@@ -19,7 +19,7 @@ function App() {
       <Welcome />
       <Specs />
       <Info />
-      <Economy />
+      {/* <Economy /> */}
       <Booth />
       <Roadmap />
       <Team />
