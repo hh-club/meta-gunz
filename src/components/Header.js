@@ -6,11 +6,10 @@ import { Container, Alert } from 'react-bootstrap';
 const Header = (props) => {
     return (
         <Container className="header-container">
-            <Alert.Heading className="heading">{props.heading}</Alert.Heading>
+            <Alert.Heading className="heading" style={{ paddingBottom: "3vh" }}>{props.heading}</Alert.Heading>
             {
                 props.content.map(line =>
-
-                    <p key={props.content.indexOf(line)}>
+                    <p style={{ marginBottom: "3vh", fontSize: "1.1vw" }} key={props.content.indexOf(line)}>
                         {line}
                     </p>
 

@@ -1,29 +1,32 @@
 import React from 'react';
-import { Container, Row, Col, Image, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Image, Alert } from 'react-bootstrap';
 import Header from './Header';
 import HR from './Divider';
 
-import hedgehogs from '../images/hedgehogs.gif';
+import './Specs.css'
 
-const Layers = () => {
+import common from '../images/rarity_icons/common.png';
+import uncommon from '../images/rarity_icons/uncommon.png';
+import rare from '../images/rarity_icons/rare.png';
+import epic from '../images/rarity_icons/epic.png';
+import legendary from '../images/rarity_icons/legendary.png';
+import mythic from '../images/rarity_icons/mythic.png';
+
+const Rarity = (props) => {
     return (
         <>
-            <Row>
-                <Col xs={4}>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">10</Badge>{' '}Backgrounds</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">21</Badge>{' '}Expressions</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">18</Badge>{' '}Eyes</h6></ListGroup.Item>
-                    </ListGroup>
-                </Col>
-                <Col>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">33</Badge>{' '}Accessories</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">35</Badge>{' '}Outfits</h6></ListGroup.Item>
-                        <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><h6><Badge bg="danger" text="black">09</Badge>{' '}Ears</h6></ListGroup.Item>
-                    </ListGroup>
-                </Col>
-            </Row>
+
+            <Alert variant="none" style={{ marginBottom: 0 }} text="white">
+                <Row>
+                    <Col>
+                        <h1 className="rarity-heading" style={{ color: `${props.c}` }}>{props.header}</h1>
+                        <p className="rarity-n">{props.n}</p>
+                    </Col>
+                    <Col>
+                        <Image style={{ maxWidth: "100%", borderRadius: "3%" }} src={props.src} />
+                    </Col>
+                </Row>
+            </Alert>
         </>
     )
 }
@@ -32,31 +35,68 @@ const Specs = () => {
     return (
         <>
             <HR />
+
             <Container id="Specs" className="section-container">
+                <Header
+                    heading="Rarity"
+                    content={[]}
+                />
                 <Row>
-                    <Col xs={12} md={8}>
-                        <Header heading="The Details"
-                            content={["Each Hungover Hedgehog is completely unique and programmatically generated from over 150 possible attributes, including clothing, headwear and more. All Hedgehogs are cool, but some are rarer than others.",]}
+                    <Col>
+                        <Rarity
+                            header="Common"
+                            n="2747/8888"
+                            c="#ffffff"
+                            src={common}
                         />
-                        <Layers />
-                        <br />
-                        <Header
-                            content={["The hedgehogs are stored as tokens on the Ethereum blockchain and are hosted on IPFS."]}
-                        />
-                        {/* <Row>
-                            <Col xs={4}>
-                                <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">0.05Ξ</Badge>{' '}for the pre-sale</h6></ListGroup.Item>
-                            </Col>
-                            <Col>
-                                <ListGroup.Item style={{ backgroundColor: "#000", color: "white" }} variant="dark"><h6><Badge bg="success" text="black">0.07Ξ</Badge>{' '}for the public sale</h6></ListGroup.Item>
-                            </Col>
-                        </Row> */}
                     </Col>
-                    <Col xs={6} md={4}>
-                        <Image style={{ maxWidth: "100%", borderRadius: "3%" }} src={hedgehogs} />
+                    <Col>
+                        <Rarity
+                            header="Uncommon"
+                            n="2271/8888"
+                            c="#72f74f"
+                            src={uncommon}
+                        />
                     </Col>
                 </Row>
-            </Container >
+                <Row>
+                    <Col>
+                        <Rarity
+                            header="Rare"
+                            n="1769/8888"
+                            c="#183ff6"
+                            src={rare}
+                        />
+                    </Col>
+                    <Col>
+                        <Rarity
+                            header="Epic"
+                            n="1100/8888"
+                            c="#811df3"
+                            src={epic}
+                        />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Rarity
+                            header="Legendary"
+                            n="607/8888"
+                            c="#f5cc47"
+                            src={legendary}
+                        />
+                    </Col>
+                    <Col>
+                        <Rarity
+                            header="Mythic"
+                            n="272/8888"
+                            c="#e7366b"
+                            src={mythic}
+                        />
+                    </Col>
+                </Row>
+
+            </Container>
         </>
     )
 }

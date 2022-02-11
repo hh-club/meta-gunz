@@ -1,7 +1,7 @@
 :root {
   --accent: white;
-  --bg: #020a29;
-  --glow: #810b46;
+  --bg: #041243;
+  --glow: #e6366b;
 }
 
 @font-face {
@@ -21,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
   letter-spacing: 0.05em;
+  font-family: 'Minecraft', sans-serif;
 }
 
 code {
@@ -40,8 +41,10 @@ code {
 
 .heading {
   font-family: 'Minecraft', sans-serif;
-  text-transform: uppercase;  
-  font-size: 50px;
+  text-transform: uppercase;
+  /* display: flex; 
+  justify-content: center; */
+  font-size: 3vw;
   color: var(--accent);
   text-shadow: 0 0 10px #fff, 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow)
   /* background: var(--accent);
@@ -59,7 +62,7 @@ code {
   font-family: 'Minecraft', sans-serif;
   text-transform: uppercase;
   font-style: normal;
-  font-size: 64px;
+  font-size: 4vw;
   text-shadow: 0 0 10px #fff, 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow), 0 0 10px var(--glow)
   /* background: -webkit-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
   background: -moz-linear-gradient(to right, var(--accent) 20%, #C1CF63 100%);
@@ -74,30 +77,12 @@ code {
   padding-bottom: 3vh;
 }
 
-::-webkit-scrollbar {
-  width: 8px; /* 1px wider than Lion. */
-  /* This is more usable for users trying to click it. */
-  background-color: rgba(0,0,0,0);
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-}
-/* hover effect for both scrollbar area, and scrollbar 'thumb' */
-::-webkit-scrollbar:hover {
-  background-color: rgba(0, 0, 0, 0.09);
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
-::-webkit-scrollbar-thumb:vertical {
-  /* This is the EXACT color of Mac OS scrollbars. 
-     Yes, I pulled out digital color meter */
-  background: var(--accent);
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-}
-::-webkit-scrollbar-thumb:vertical:active {
-  background: var(--accent); /* Some darker color when you click it */
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .glow {

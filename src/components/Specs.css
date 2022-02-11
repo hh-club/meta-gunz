@@ -1,0 +1,10 @@
+.rarity-heading {
+    font-family: 'Minecraft', sans-serif;
+    text-transform: uppercase;  
+    font-size: 2vw;
+    color: var(--accent);
+}
+
+.rarity-n {
+    color: white;
+}

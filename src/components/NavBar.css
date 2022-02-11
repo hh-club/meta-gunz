@@ -3,5 +3,26 @@
 }
 
 .nav-main {
-    padding: 3vh 0;
+    padding: 2.5vh 0;
+    background-color: transparent;
+}
+
+
+.n-item {
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding: 0 4vw;
+}
+
+.icon-item {
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding-right: 0;
+}
+
+
+.n-item:hover {
+    text-transform:underline;
 }

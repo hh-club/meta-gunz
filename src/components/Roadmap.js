@@ -4,25 +4,70 @@ import { Container, Row, Col, Alert, ListGroup, Badge } from 'react-bootstrap';
 import Header from './Header';
 import HR from './Divider';
 
+const RoadmapItemLabel = (props) => {
+    return (
+        <>
+            <div>
+                <Row>
+                    <Col md="auto">
+                        <Badge bg="danger" text="black">{props.n}</Badge>{' '}
+                    </Col>
+                    <Col>
+                        <h1 className="item">{props.heading}</h1>
+
+                        <p className="content">
+                            {props.content}
+                        </p>
+                    </Col>
+                </Row>
+
+
+            </div>
+        </>
+    )
+}
+
 const RoadmapItem = (props) => {
     return (
         <>
-            <div style={{ borderColor: "var(--accent)", borderStyle: "solid", borderWidth: "1px", borderRadius: "5px" }}>
+            <div style={{ borderColor: "var(--glow)", borderStyle: "solid", borderWidth: "2px", borderRadius: "5px" }}>
                 <Alert variant="none" style={{ marginBottom: 0 }} text="white">
                     <Row>
-                        <Col md={2} lg={2} className="my-auto percent-box">
+                        <Col md={3} lg={3} className="my-auto percent-box">
                             <h1 className="percent heading">
                                 {props.n}
                             </h1>
                         </Col>
-                        <Col>
+                        <Col className="my-auto">
                             <ListGroup variant="flush">
-                                {props.item_1 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">1</Badge>{' '}{props.item_1}</ListGroup.Item>}
-                                {props.item_2 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">2</Badge>{' '}{props.item_2}</ListGroup.Item>}
-                                {props.item_3 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">3</Badge>{' '}{props.item_3}</ListGroup.Item>}
-                                {props.item_4 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">4</Badge>{' '}{props.item_4}</ListGroup.Item>}
-                                {props.item_5 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">5</Badge>{' '}{props.item_5}</ListGroup.Item>}
-                                {props.item_6 && <ListGroup.Item style={{ backgroundColor: "var(--bg)", color: "white" }} variant="dark"><Badge bg="danger" text="black">6</Badge>{' '}{props.item_6}</ListGroup.Item>}
+                                {props.item_1 && <ListGroup.Item className="rmap" variant="dark">
+                                    <RoadmapItemLabel
+                                        n="1"
+                                        heading={props.item_1}
+                                        content={props.content_1}
+                                    />
+                                </ListGroup.Item>}
+                                {props.item_2 && <ListGroup.Item className="rmap" variant="dark">
+                                    <RoadmapItemLabel
+                                        n="2"
+                                        heading={props.item_2}
+                                        content={props.content_2}
+                                    />
+                                </ListGroup.Item>}
+                                {props.item_3 && <ListGroup.Item className="rmap" variant="dark">
+                                    <RoadmapItemLabel
+                                        n="3"
+                                        heading={props.item_3}
+                                        content={props.content_3}
+                                    />
+                                </ListGroup.Item>}
+                                {props.item_4 && <ListGroup.Item className="rmap" variant="dark">
+                                    <RoadmapItemLabel
+                                        n="4"
+                                        heading={props.item_4}
+                                        content={props.content_4}
+                                    />
+                                </ListGroup.Item>}
                             </ListGroup>
                         </Col>
                     </Row>
@@ -44,32 +89,48 @@ const Roadmap = () => {
                 />
 
                 <RoadmapItem
-                    n="25%"
-                    item_1="5,555 Genesis Hedgehogs Launch"
-                    item_2="Daily giveaways for our community"
-                    item_3="Aggressive advertising campaign, giving away whitelist spots to early supporters"
-                    item_4="Sold Out and listing on secondary marketplaces (Opensea)"
-                    item_5="Distribute HHC NFTs to the giveaway winners after public sale complete"
-                    item_6="Prizes of up to $3000 in ETH for lucky holders who mint 1 of the 10 WANTED hedgehogs"
+                    n="Part A"
+                    item_1="Discord Launch"
+                    item_2="Presale Giveaways"
+                    item_3="Project Promotion"
+                    content_1="The city has been run down by the dead, remaining survivors make their way to a safehouse rumored to be at the edge of town."
+                    content_2="A crate with a small stash of weapons is found in one of the storage rooms at the safehouse which only a select few of the bravest survivors are able to obtain."
+                    content_3="A broadcast signal is send out to many in an attempt to alert any remaining survivors that there is a safehouse with weapons and supplies."
                 />
                 <RoadmapItem
-                    n="50%"
-                    item_1="Celebrity and Influencer promotions after sell out"
-                    item_2="Crypto whales brought in to sweep the floor and raise the value of our hedgehogs"
-                    item_3="Announcement of $THORN token of which a large percentage will be reserved for HHC holders. $THORN can even be used to purchase upcoming merchandise"
-                    item_4="A Defi platform will be created that will work integrated with our token and NFT collections"
-                    item_5="Listing in exchanges"
+                    n="Part B"
+                    item_1="OpenSea Listing"
+                    item_2="Wallet Verification"
+                    content_1="A group of survivors from the safehouse make their way to the gun store to stock up on MetaGunz and ammunition."
+                    content_2="Survivors return with many different weapons and are able to acquire a MetaGunz license, owning more Gunz will unlock a higher status within the safehouse. Eventually, survivors with high status are able to access VIP benefits."
                 />
                 <RoadmapItem
-                    n="75%"
-                    item_1="4,444 Hungover Foxes will be introduced as a second collection to the genesis hedgehogs and HHC holders who own at least 5 hungover hedgehogs will be granted 1 free mint pass with holders of under 5 being granted a free whitelist pass. (Production for this collection has already started)"
+                    n="Part C"
+                    item_1="50% of funds will go back into the project"
+                    item_2="20% will go to a charity of the communities choosing"
+                    item_3="10% will go to marketing and promotion"
+                    item_4="20% will go back to our holders"
+                    content_1="Survivors use 50% of their weapons, supplies and defenses to defend the safehouse & gun store against a horde of Z-BITS approaching."
+                    content_2="MetaGunz holders stumble across a group of survivors in desperate need of supplies so they give them 20% of what they had."
+                    content_3="Safehouse sends the search and rescue parties to expand their explored regions and find more survivors"
+                    content_4="MetaGunz store owner is thankful for help with fighting off the horde and gifts 20% of his Gunz to the safehouse for free!"
                 />
                 <RoadmapItem
-                    n="100%"
-                    item_1="Community wallet / Liquidity pool / Metaverse land"
-                    item_2="Over 50 ETH will be added to the community wallet, and the liquidity pool will be initialized"
-                    item_3="Purchase of metaverse land for community where we will begin development of the Hungover Hedgehog Nightclub where holders will be able to meet up and have conversations with one another while completing missions to conquer different territories in the sewers"
+                    n="Part D"
+                    item_1="Announcement of secret MetaGunz project"
+                    item_2="Opening of THE SAFEHOUSE (Holders Only)"
+                    content_1="MetaGunz holders are tipped with some interesting information about the whereabouts of a secret stash that was rumored to contain a bunch of high-tech weapons and supplies."
+                    content_2="While embarking on a dangerous journey to find the secret stash, survivors come across an area of land that for once doesn't seem to be crawling with Z-BITS. They alert the rest of the crew back at the safehouse and all survivors safely inhabit this well guarded fortress to themselves."
                 />
+                <RoadmapItem
+                    n="Part E"
+                    item_1="Secret Project Launch"
+                    item_2="MetaGunz - The Game"
+                    content_1="The survivors finally locate a big facility at the edge of town, a former government/military opperations base used to manufacture weapons that are beleived to be made of a rare material discovered post-cryptopocalypse. It was noted in an old journal that these weapons were 'a force not to be reckoned with', it is only until interacting with these items that you realise how real they actually are and the potential that it has to turn the tides of the war against Z-BITS."
+                    content_2="We plan to release a game where you can team up with your friends, fight zombies and explore the Cryptopocalypse. Find in-game items & currency to claim ney Gunz."
+
+                />
+
 
             </Container >
         </>

@@ -11,12 +11,12 @@ const MemberResponse = (props) => {
                 <h1 className="heading" style={{ fontSize: "24px" }}>{(props.member) ? "Welcome to The Booth" : "Join the Club"}</h1>
                 <p style={{ color: "white" }}>
                     {(props.member) ?
-                        "Congratulations, you are a member of an extremely secretive back room in The Hedge known as ... The Booth" :
-                        "The Booth is for club members only, be sure to mint one of our hedgehogs or purchase one from OpenSea when they are released :)"}
+                        "Congratulations, you are a member of the Saferoom which is currently being constructed, be sure to check back soon" :
+                        "The Saferoom is for MetaGunz holders who have 10 or more MetaGunz only, be sure to purchase some from OpenSea :)"}
                 </p>
                 <hr />
                 <p className="mb-0">
-                    <Badge bg="success">{props.walletAddress}</Badge>
+                    <Badge bg="danger">{props.walletAddress}</Badge>
                 </p>
             </Alert>
         </div>
@@ -47,7 +47,7 @@ const Booth = () => {
         const n = await nfts.length;
         for (let i = 0; i < n; i++) {
             const nft = nfts[i]["meta"]["name"];
-            if (nft.includes("Hungover Hedgehog")) {
+            if (nft.includes("MetaGunz")) {
                 setIsMember(true);
                 return;
             }
@@ -69,13 +69,13 @@ const Booth = () => {
             <Container id="Booth" className="section-container">
                 <Header
                     heading="The Safehouse"
-                    content={['THE BOOTH will be accessible after the public sale has finished to those who hold at least 1 Hungover Hedgehog.',
-                        "Through THE BOOTH you will be able to claim a free 1000 $THORN tokens and will gain access to the staking function in which your Hedgehogs will each gain 500 $THORN tokens per day. Along with this you'll gain access to Hagen's exclusive item stock that is not normally buyable from the scrap shop.",
-                        "However, THE BOOTH is packed with many other Hedgehogs like you and there are very limited exclusive items, after all Hagen is pretty broke."]}
+                    content={['Holders of at least 10 MetaGunz will be able to access THE SAFEHOUSE shortly after we sell out.',
+                        "Through THE SAFEHOUSE you will be able to claim a free 1000 $GUNZ token and will gain access to the staking function in which your MetaGunz will shoot Z-BITS and each gain 100 $GUNZ token per day.",
+                        "To further reward our whales, those who hold at least 50 MetaGunz will receive a FREE MINT PASS for our MetaSurvivors collection which will be accessible exclusively to MetaGunz holders."]}
                 />
 
                 {!walletAddress &&
-                    <Button onClick={connectWallet} variant="outline-success" style={{ borderWidth: "2px" }}>
+                    <Button onClick={connectWallet} variant="outline-danger" style={{ borderWidth: "2px" }}>
                         <strong>
                             Connect Wallet
                         </strong>

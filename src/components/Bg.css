@@ -1,0 +1,42 @@
+.cont {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mid {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.openSEA {
+    background-color: #2081E2;
+    border-color: #2081E2;
+    border-radius: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1vw;
+    text-transform: uppercase;
+    /* -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg); */
+    transition-duration: 300ms;
+    
+}
+.openSEA:hover {
+    background-color:var(--glow);
+
+}

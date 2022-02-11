@@ -43,25 +43,21 @@ const Team = () => {
                         name="Guiji"
                         role="Marketing Genius and Project Lead"
                         src={haze}
-                        description="Bossing me around and some other stuff I hope"
                     />
                     <TeamMember
                         name="Slick"
                         role="The Picasso of Vector Art"
                         src={saucey}
-                        description="Create NFT Layers, Graphics for Websites and Socials and Logo's"
                     />
                     <TeamMember
                         name="Chef"
                         role="Programmer and Keyboard Presser"
                         src={leaf}
-                        description="Website, Minting DAPP, Smart Contract and NFT Generation"
                     />
                     <TeamMember
                         name="Shift"
                         role="Social Media Manager Extraordinaire"
                         src={lynx}
-                        description="Manages Twitter, Instagram and Discord"
                     />
 
                 </Row>

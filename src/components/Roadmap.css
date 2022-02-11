@@ -8,3 +8,17 @@
 .percent-box {
     padding-right: 0;
 }
+
+.rmap {
+    background-color: var(--bg);
+    color: white;
+    font-size: 32px;
+}
+
+.item {
+    font-size: 24px;
+}
+
+.content {
+    font-size: 12px;
+}
